@@ -1,0 +1,37 @@
+<!-- Exercise 7-->
+<!-- Create an index.html page and add a <script> tag to the body. 
+    In the script tag, write some JavaScript that waits 5 seconds before popping up an alert box which should show a random number from 0 to 1. 
+    If the number is less than 0.5, then the message should print "{number} is less than 0.5", otherwise print "{number} is greater than or equal to 0.5", 
+    where {number} is the random number. 
+    You will need to use your resources to figure out how to accomplish this in JavaScript.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Alert</title>
+</head>
+<body>
+    <script> //JAVASCRIPT code
+        // Function to generate a random number between 0 and 1
+        function getRandomNumber() {
+            return Math.random();
+        }
+
+        // Function to display the alert after 5 seconds
+        setTimeout(function() {
+            // Generate a random number
+            var randomNumber = getRandomNumber();
+
+            // Display an alert based on the random number
+            if (randomNumber < 0.5) {
+                alert(randomNumber + " is less than 0.5");
+            } else {
+                alert(randomNumber + " is greater than or equal to 0.5");
+            }
+        }, 5000); // 5000 milliseconds = 5 seconds
+    </script>
+</body>
+</html>
