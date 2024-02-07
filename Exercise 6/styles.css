@@ -1,0 +1,15 @@
+/* Exercise 6 */
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #4bb881; 
+    
+}
+
+#main-title {
+    text-align: center; 
+}
+
+.content {
+    margin-bottom: 12px; 
+}
