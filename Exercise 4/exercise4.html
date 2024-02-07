@@ -1,0 +1,53 @@
+<!-- Exercise 4 -->
+<!--Create an HTML page with 4 paragraphs of text. 
+    The actual text can be anything (hint: in VSCode, when editing HTML, type "lorem-50" then hit tab to generate 50 random Latin words as placeholder text). 
+    Make the background color of the first and third paragraph red and the second and fourth paragraph black. 
+    Make the text color of all paragraphs white so you can read it. Use embedded CSS for the styling and classes to control which paragraphs get which style. 
+    Make sure to reuse the styles for the first and third and second and fourth paragraphs for full credit.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        /* Embedded CSS */
+        .red-bg {
+            background-color: red;
+        }
+
+        .black-bg {
+            background-color: black;
+        }
+
+        .white-text {
+            color: white;
+        }
+
+        /* Reusing styles for the first and third paragraphs */
+        .first-paragraph,
+        .third-paragraph {
+            background-color: red;
+        }
+
+        /* Reusing styles for the second and fourth paragraphs */
+        .second-paragraph,
+        .fourth-paragraph {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <p class="first-paragraph red-bg white-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit mollitia quibusdam nobis harum aliquam! Amet quos quidem doloremque molestiae, rem laudantium sint ex saepe dolorem aliquid nihil explicabo, similique reiciendis error, ad atque.</p>
+        <p class="second-paragraph black-bg white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magnam, in mollitia veniam earum iusto vero vitae saepe asperiores! Nisi, laborum doloremque cupiditate velit laboriosam fugit cum illo nobis, nihil ab similique tempore magnam doloribus totam.</p>
+        <p class="third-paragraph red-bg white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ratione excepturi dolore itaque, illo cumque eveniet, quasi, suscipit tempore sapiente sed molestiae. Maiores quas pariatur exercitationem facere! Eius saepe ipsam ratione ad blanditiis.</p>
+        <p class="fourth-paragraph black-bg white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto rerum, iusto animi ipsum, optio distinctio blanditiis sapiente fuga in, iure dolore est accusantium. Quaerat nulla repudiandae saepe numquam distinctio.</p>
+    </main>
+</body>
+</html>
